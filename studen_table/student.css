@@ -1,0 +1,70 @@
+body {
+    font-family: sans-serif;
+}
+
+#grades-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#grades-table th,
+#grades-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#grades-table th {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+#grades-table td {
+    text-align: right;
+}
+
+#grades-table td.name,
+#grades-table td.id {
+    text-align: left;
+}
+
+#grades-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#grades-table td.unsubmitted {
+    background-color: yellow;
+    text-align: center;
+}
+
+#grades-table td.below-average {
+    background-color: red;
+    color: white;
+}
+
+#unsubmitted-count {
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/*"Retrieve" button */
+#retrieve-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#retrieve-btn:hover {
+    background-color: #d32f2f;
+}

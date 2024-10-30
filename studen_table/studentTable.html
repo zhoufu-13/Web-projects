@@ -1,0 +1,44 @@
+<!--https://www.w3schools.com/html/html_tables.asp-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Grades Table</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+<h1>Student Grade Table</h1>
+<style>
+  h1 {
+    text-align: center;
+  }
+</style>
+<div id="table">
+  <table id="grades-table">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>ID</th>
+      <th>Assignment 1</th>
+      <th>Assignment 2</th>
+      <th>Assignment 3</th>
+      <th>Assignment 4</th>
+      <th>Assignment 5</th>
+      <th id = "average">Average [%]</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Initial rows with student data will be added here via JavaScript -->
+    </tbody>
+  </table>
+</div>
+
+<div id="unsubmitted-count"></div>
+<button id="addrow-btn">Add Student</button>
+<button id="addcolumn-btn">Add Assignment</button>
+<button id="retrieve-btn">Retrieve</button>
+
+<script src="table.js"></script>
+</body>
+</html>
