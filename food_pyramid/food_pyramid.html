@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "food.css">
+</head>
+<body>
+<script src = "food_change.js"></script>
+    <div class = "box">
+        <div class="popup-content">
+            <p>Please choose your age</p>
+            <button class = "selection" onclick="ageSelection('1-4')">1-4</button>
+            <button class = "selection" onclick="ageSelection('Over 5')">Over 5</button>
+            <button class = "selection" onclick="ageSelection('Teenager')">Teenager</button>
+            <button class = "selection" onclick="ageSelection('Adult')">Adult</button>
+            <p id="demo"></p>
+        </div>
+    <div class = "shape one">
+        <button class = "b1" onclick = "increaseItemCount('1')">+</button>
+        <button class = "food-numbertop" type = "button">
+            <span id = "itemcount1">1</span>
+        </button>
+        <button class = "b2" onclick = "decreaseItemCount('1')">-</button>
+    </div>
+    <div class = "shape two">
+        <button class = "b1" onclick = "increaseItemCount('2')">+</button>
+        <button class="food-number" type="button">
+            <span id = "itemcount2">2</span>
+        </button>
+        <button class = "b2" onclick = "decreaseItemCount('2')">-</button>
+    </div>
+    <div class = "shape three">
+        <button class = "b1" onclick = "increaseItemCount('3')">+</button>
+        <button class = "food-number" type = "button">
+            <span id = "itemcount3">8</span>
+        </button>
+        <button class = "b2" onclick = "decreaseItemCount('3')">-</button>
+    </div>
+    <div class = "shape four">
+        <button class = "b1" onclick = "increaseItemCount('4')">+</button>
+        <button class = "food-number" type = "button">
+            <span id = "itemcount4">5</span>
+        </button>
+        <button class = "b2" onclick = "decreaseItemCount('4')">-</button>
+    </div>
+    <div class = "shape five">
+        <button class = "b1" onclick = "increaseItemCount('5')">+</button>
+        <button class = "food-number" type = "button">
+            <span id = "itemcount5">6</span>
+        </button>
+        <button class = "b2" onclick = "decreaseItemCount('5')">-</button>
+    </div>
+    <div class = "shape six">
+        <button class = "b1" onclick = "increaseItemCount('6')">+</button>
+        <button class = "food-number" type = "button">
+            <span id = "itemcount6">8</span>
+        </button>
+        <button class = "b2" onclick = "decreaseItemCount('6')">-</button>
+    </div>
+</div>
+<!--date input and validate-->
+<label class="dateInput">Date:
+    <input class = "Input" type="date" min = "2024-01-01" required />
+    <span class = "validity"></span>
+</label>
+</body>
+</html>

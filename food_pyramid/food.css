@@ -1,0 +1,183 @@
+body{
+    background-color: white;
+}
+.shape{
+    margin: auto;
+    position: relative;
+}
+/*make all the buttons appear only when hove the shelf*/
+.shape:hover .b1,
+.shape:hover .b2{
+    display: block;
+}
+.box{
+    min-width: 700px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,30%);
+    text-align: center;
+}
+.one{
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 100px solid #fc0202;
+}
+.one:hover{
+    border-bottom: 100px solid #fc3c47;
+}
+/*top shelf have a special case*/
+.one:hover .b2,
+.one:hover .b1{
+    display: block;
+    margin-bottom: -40px;
+}
+.two{
+    width:150px;
+    height:0;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-bottom: 60px solid #ff7844;
+}
+.one + .two{
+    margin-top: 10px;
+}
+.two:hover {
+    border-bottom: 60px solid #ff9769;
+}
+.three{
+    width:259px;
+    height:0;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-bottom: 60px solid #ffd12b;
+}
+.two + .three{
+    margin-top: 10px;
+}
+.three:hover {
+    border-bottom: 60px solid #ffe55d;
+}
+.four{
+    width:350px;
+    height:0;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-bottom: 60px solid #1593ff;
+}
+.four:hover{
+    border-bottom: 60px solid #18a7ff;
+}
+.five{
+    width:440px;
+    height:0;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-bottom: 60px solid #B37A4C;
+}
+.five:hover{
+    border-bottom: 60px solid #CC9966;
+}
+.six{
+    width:530px;
+    height:0;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-bottom: 60px solid #72bf6a;
+}
+.six:hover{
+    border-bottom: 60px solid #8bca84;
+}
+/*increase*/
+.b1{
+    display: none;
+    position: absolute;
+    bottom: -42px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 31px;
+    border: none;
+    color: black;
+    padding: 5px 5px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+/*decrease*/
+.b2{
+    display: none;
+    position: absolute;
+    bottom: -42px;
+    right: 50%;
+    transform: translateX(-50%);
+    margin: 0 15px;
+    border: none;
+    color: black;
+    padding: 6px 6px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+/*default food numbers for top shelf*/
+.food-numbertop{
+    position: absolute;
+    margin-top: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+/*default food numbers(buttons) for each shelf*/
+.food-number{
+    position: absolute;
+    margin-top: 27px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+/*date input*/
+.dateInput{
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,30%);
+    margin-top: 150px;
+    font: 1rem 'Fira Sans', sans-serif;
+    text-align: center;
+}
+.dateInput,Input{
+    font-size: 15px;
+}
+/*validate the dates*/
+.span::after{
+    padding-left: 5px;
+}
+.Input:valid + span::after{
+    content: "✓";
+}
+.Input:invalid + span::after{
+     content: "✖";
+}
+/*Age*/
+.selection{
+    border: none;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+/*Age selection box*/
+.popup-content{
+    display: block;
+    position: absolute;
+    left: 10%;
+    transform: translate(-50%,30%);
+}
